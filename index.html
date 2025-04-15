@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Parquímetro</h1>
+    <p>R$ 1,00 = 30 minutos</p>
+    <p>R$ 1,75 = 60 minutos</p>
+    <p>R$ 3,00 = 120 minutos (Tempo maximo permitido)</p>
+
+    <div>
+        <input type="number" id="valorInserido" placeholder="Digite o valor (ex: 3.00)">
+        <button onclick="parquimetro.processarValor()">Confirmar</button>
+      </div>
+    
+      <div id="tempo">Tempo: 0 min</div>
+      <div id="troco">Troco: R$ 0,00</div>
+    
+      <div>
+        <button onclick="parquimetro.iniciarContagem()">Iniciar</button>
+        <button onclick="parquimetro.reiniciar()">Reiniciar</button>
+      </div>
+    
+      <script src="script.js"></script>
+</body>
+</html>
